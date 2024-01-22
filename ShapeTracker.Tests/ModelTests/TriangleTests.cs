@@ -27,9 +27,9 @@ namespace ShapeTracker.Tests
     public void SetSide1_SetsValueOffSide1_Void()
     {
       Triangle newTriangle = new Triangle(3,3);
-      int newLenght1 = 44;
-      newTriangle.Side1 = newLenght1;
-      Assert.AreEqual(newLenght1, newTriangle.Side1);
+      int newLength1 = 44;
+      newTriangle.Side1 = newLength1;
+      Assert.AreEqual(newLength1, newTriangle.Side1);
     }
 
     [TestMethod]
@@ -39,6 +39,15 @@ namespace ShapeTracker.Tests
       Triangle newTriangle = new Triangle(2, length2);
       int result = newTriangle.Side2;
       Assert.AreEqual(length2, result);
+    }
+
+    [TestMethod]
+    public void SetSide2_SetsValueOfSide2_Void()
+    {
+      Triangle newTriangle = new Triangle(3,4);
+      int newLength2 = 6;
+      newTriangle.Side2 = newLength2;
+      Assert.AreEqual(newLength2, newTriangle.Side2);
     }
 
   }
